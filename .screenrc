@@ -1,0 +1,22 @@
+# turn off the annoying "Wuff, Wuff"
+vbell off
+
+# dont show me the copyright screen
+startup_message off
+
+hardstatus on
+hardstatus alwayslastline
+
+# colored window list with system stats
+hardstatus string "@%H - %{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H(%l)-%{kc}%d %M%{d}-%c "
+
+# bind <F7> to detach screen from this terminal
+# bind <F2> to rename an existing window
+# bind <F3> to move to previous window
+# bind <F4> to move to next window
+bindkey -k k2 title
+bindkey -k k3 prev
+bindkey -k k4 next
+bindkey -k k5 focus
+bindkey -k k7 detach
+bindkey -k k8 remove
